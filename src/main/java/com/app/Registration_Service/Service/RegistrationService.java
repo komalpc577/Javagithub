@@ -25,4 +25,9 @@ public class RegistrationService {
 	}
 	
 	
+	public User fetchUserByUsername(String username,String password)
+	{
+		return registerRepo.findByUsernameAndPassword(username, password);
+	}
+	
 }
