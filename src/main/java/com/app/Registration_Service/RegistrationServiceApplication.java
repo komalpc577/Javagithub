@@ -3,6 +3,7 @@ package com.app.Registration_Service;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class RegistrationServiceApplication {
 
@@ -11,3 +12,4 @@ public class RegistrationServiceApplication {
 	}
 
 }
+

@@ -1,6 +1,7 @@
 package com.app.Registration_Service.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,6 +33,7 @@ public class RegistrationController {
 		return userObj;
 	}
 	
+	@CrossOrigin(origins="http://localhost:4200")
 	@PostMapping("/login")
 	public User loginUser(@RequestBody User user) throws Exception
 	{
