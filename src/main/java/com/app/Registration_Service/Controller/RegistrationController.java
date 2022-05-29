@@ -15,6 +15,7 @@ public class RegistrationController {
 	@Autowired
 	private RegistrationService registerService;
 	
+	@CrossOrigin(origins="http://localhost:4200")
 	@PostMapping("/registerUser")
 	public User registereUser(@RequestBody User user) throws Exception
 	{
